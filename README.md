@@ -2,14 +2,15 @@
 
 [![](https://img.shields.io/badge/HuggingFace-Dataset-yellow?labelColor=lightgray&logo=huggingface&style=flat-square)](https://huggingface.co/datasets/ZeroXeno/CharToM-QA)
 
-CharToM-QA is a benchmark introduced in the paper [The Essence of Contextual Understanding in Theory of Mind: A Study on Question Answering with Story Characters](https://arxiv.org/abs/2501.01705). It comprises 1,035 Theory of Mind (ToM) questions based on characters from classic novels. The benchmark is designed to evaluate ToM-related question-answering (QA) capabilities about characters in the context of novels. In CharToM-QA, the task takes the form of ToM related QA about characters within story plots. This setting naturally addresses the aforementioned challenges of most existing datasets due to the intrinsic features of story plots in novel books: 
+CharToM-QA is a benchmark introduced in the paper [The Essence of Contextual Understanding in Theory of Mind: A Study on Question Answering with Story Characters](https://arxiv.org/abs/2501.01705). It comprises 1,035 Theory of Mind (ToM) questions based on characters from classic novels. The benchmark is designed to evaluate the capabilities of models to comprehend the ToM of characters in novel stories by asking ToM-related questions to models. In CharToM-QA, the task takes the form of ToM-related QA about characters within story plots. This setting naturally addresses the challenges of most existing ToM datasets due to the intrinsic features of story plots in novel books: 
 - diverse social scenarios
 - rich in complex social relationships and interactions
 - high relevance to the whole book storyline
 
 Thus, it alleviates heavy reliance on pre-determined rules to generate testing scenarios and raises higher requirements for comprehensively understanding context when evaluating ToM capability of current LLMs.
 
-CharToM-QA benchmark assesses the ToM capability in four dimensions: `belief`, `intention`, `emotion`, and `desire`. Each data contains two types of QA: `generative QA` and `multiplechoice QA`. In generative QA, the responses are graded based on based on a structured scoring system, incorporating bonus points and penalty. Multiple-choice QA requires selecting the correct answer from predefined choices, including misleading alternatives.
+CharToM-QA benchmark assesses the ToM capability in four dimensions: `belief`, `intention`, `emotion`, and `desire`. Our benchmark supports two types of QA experiments: `generative QA` and `multiplechoice QA`. In generative QA, the quality of model responses are assessed based on the reference answer and corresponding bonus points provided for each question. Multiple-choice QA requires the model to select the most appropriate statement from four provided choices including the correct answer and other misleading ones.
+
 An example from CharToM-QA benchmark is given below:
 
 <center><img src="./pics/intro.jpg" width="80%"></center>
