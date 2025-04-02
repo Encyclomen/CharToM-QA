@@ -5,7 +5,7 @@ import time
 from openai import OpenAI
 
 
-def chat_complete(client, system_message, user_input, history=None, model="gpt-4o-mini", temperature=0.2):
+def chat_complete(client, system_message, user_input, history=None, model="gpt-4o", temperature=0.2):
     message = []
     message.append({"role": "system", "content": system_message})
     if history != None:
